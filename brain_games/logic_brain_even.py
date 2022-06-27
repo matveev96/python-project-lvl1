@@ -17,9 +17,8 @@ def brain_even():
         if right_answer == answer:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+            print(f"'{answer}' is wrong answer ;(. \
+Correct answer was '{right_answer}'.")
             print(f"Let's try again, {name}!")
             break
         print(f"Congratulations, {name}!")
-    
-
