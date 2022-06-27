@@ -1,11 +1,12 @@
 #!/usr/bin/env python
+#!/usr/bin/env python
 
-from brain_games.cli import welcome_user
+from brain_games.logic_brain_even import brain_even
 
 
 def main():
     print('Welcome to the Brain Games!')
-    welcome_user()
+    brain_even()
 
 
 if __name__ == '__main__':
