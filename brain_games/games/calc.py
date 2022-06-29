@@ -4,7 +4,7 @@ from random import randint, choice
 def calculate():
     random_number_first = randint(1, 20)
     random_number_second = randint(1, 20)
-    random_operator = choice("+-*")
+    random_operator = choice(['+', '-', '*'])
     expression = (f"{random_number_first} \
 {random_operator} {random_number_second}")
     print(f"Question: {expression}")
