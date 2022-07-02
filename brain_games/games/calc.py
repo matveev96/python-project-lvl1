@@ -9,14 +9,11 @@ def calculate():
 {random_operator} {random_number_second}")
     print(f"Question: {expression}")
     if random_operator == "+":
-        result = random_number_first + random_number_second
-        return str(result)
+        return str(random_number_first + random_number_second)
     elif random_operator == "-":
-        result = random_number_first - random_number_second
-        return str(result)
+        return str(random_number_first - random_number_second)
     else:
-        result = random_number_first * random_number_second
-        return str(result)
+        return str(random_number_first * random_number_second)
 
 
 def head():
