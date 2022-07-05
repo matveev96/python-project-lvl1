@@ -3,7 +3,7 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "Games for your brains"
 authors = ["Alex Matveev"]
-repository = https://github.com/matveev96/python-project-lvl1
+repository = "https://github.com/matveev96/python-project-lvl1"
 packages = [
   { include = "brain_games" },
 ]
