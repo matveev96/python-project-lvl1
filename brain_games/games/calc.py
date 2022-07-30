@@ -1,6 +1,9 @@
 from random import randint, choice
 
 
+QUESTION = 'What is the result of the expression?'
+
+
 def calculate():
     random_number_first = randint(1, 20)
     random_number_second = randint(1, 20)
@@ -14,7 +17,3 @@ def calculate():
         return str(random_number_first - random_number_second)
     else:
         return str(random_number_first * random_number_second)
-
-
-def head():
-    print('What is the result of the expression?')

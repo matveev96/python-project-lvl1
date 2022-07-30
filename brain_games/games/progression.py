@@ -1,6 +1,9 @@
 from random import randint
 
 
+QUESTION = 'What number is missing in the progression?'
+
+
 def calculate():
     random_start = randint(0, 100)
     step = randint(1, 5)
@@ -15,7 +18,3 @@ def calculate():
     delimiter = ' '
     print(f"Question: {delimiter.join(lst)}")
     return answer
-
-
-def head():
-    print('What number is missing in the progression?')

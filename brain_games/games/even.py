@@ -1,6 +1,9 @@
 from random import randint
 
 
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
 def calculate():
     random_number = randint(1, 100)
     print(f"Question: {random_number}")
@@ -8,7 +11,3 @@ def calculate():
         return "yes"
     else:
         return "no"
-
-
-def head():
-    print('Answer "yes" if the number is even, otherwise answer "no".')

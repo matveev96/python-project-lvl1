@@ -1,6 +1,9 @@
 from random import randint
 
 
+QUESTION = 'Find the greatest common divisor of given numbers.'
+
+
 def calculate():
     random_number_first = randint(1, 100)
     random_number_second = randint(1, 100)
@@ -11,7 +14,3 @@ def calculate():
         else:
             random_number_second %= random_number_first
     return str(random_number_first + random_number_second)
-
-
-def head():
-    print('Find the greatest common divisor of given numbers.')

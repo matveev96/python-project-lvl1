@@ -1,6 +1,9 @@
 from random import randint
 
 
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def calculate():
     random_number = randint(1, 500)
     print(f"Question: {random_number}")
@@ -12,7 +15,3 @@ def calculate():
         return "yes"
     else:
         return "no"
-
-
-def head():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
