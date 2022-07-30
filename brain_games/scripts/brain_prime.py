@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 
 from brain_games import engine
-from brain_games.games.prime import calculate, head
-from brain_games.greeting import greet
+from brain_games.games.prime import calculate, QUESTION
 
 
 def main():
-    engine.game_engine(calculate, head, greet)
+    engine.game_engine(calculate, QUESTION)
 
 
 if __name__ == '__main__':
