@@ -8,7 +8,8 @@ def game_engine(calculate, QUESTION):
     print(QUESTION)
     STEP_COUNT = 3
     for _ in range(STEP_COUNT):
-        correct_answer = calculate()
+        task, correct_answer = calculate()
+        print(f'Question: {task}')
         answer = input('Your answer: ')
         if correct_answer == answer:
             print('Correct!')
