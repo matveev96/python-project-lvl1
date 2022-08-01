@@ -1,19 +1,20 @@
-from random import randint, choice
+"""The calculator game logic."""
+import random
+import operator
 
 
 QUESTION = 'What is the result of the expression?'
 
 
 def calculate():
-    random_number_first = randint(1, 20)
-    random_number_second = randint(1, 20)
-    random_operator = choice(['+', '-', '*'])
-    expression = (f"{random_number_first} \
-{random_operator} {random_number_second}")
-    print(f"Question: {expression}")
-    if random_operator == "+":
-        return str(random_number_first + random_number_second)
-    elif random_operator == "-":
-        return str(random_number_first - random_number_second)
-    else:
-        return str(random_number_first * random_number_second)
+    number_1 = random.randint(0, 10)
+    number_2 = random.randint(0, 10)
+    operators = {
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul
+    }
+    operation = random.choice(list(operators.keys()))
+    correct_answer = str(operators[operation] (number_1, number_2))
+    task = f'{number_1} {operation} {number_2}'
+    return (task, correct_answer)
