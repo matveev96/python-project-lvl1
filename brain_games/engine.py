@@ -1,6 +1,7 @@
 """The game engine."""
 import prompt
 
+
 def game_engine(calculate, QUESTION):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')

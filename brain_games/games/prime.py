@@ -7,7 +7,8 @@ QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def calculate():
     task = random.randint(0, 100)
-    flag = False # define a flag variable
+    # define a flag variable
+    flag = False
     if task < 2:
         flag = True
     else:

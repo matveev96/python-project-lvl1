@@ -15,6 +15,6 @@ def calculate():
         '*': operator.mul
     }
     operation = random.choice(list(operators.keys()))
-    correct_answer = str(operators[operation] (number_1, number_2))
+    correct_answer = str(operators[operation](number_1, number_2))
     task = f'{number_1} {operation} {number_2}'
     return task, correct_answer
