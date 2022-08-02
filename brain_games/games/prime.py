@@ -1,17 +1,19 @@
-from random import randint
+"""The brain prime game logic."""
+import random
 
 
 QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def calculate():
-    random_number = randint(1, 500)
-    print(f"Question: {random_number}")
-    counter = 0
-    for i in range(2, random_number // 2 + 1):
-        if random_number % i == 0:
-            counter += 1
-    if counter <= 0:
-        return "yes"
+    task = random.randint(0, 100)
+    flag = False # define a flag variable
+    if task < 2:
+        flag = True
     else:
-        return "no"
+        for i in range(2, int(task ** 0.5 + 1)):
+            if (task % i) == 0:
+                flag = True
+                break
+    correct_answer = 'no' if flag else 'yes'
+    return task, correct_answer

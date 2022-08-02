@@ -1,16 +1,18 @@
-from random import randint
+"""The great common divisor logic."""
+import random
 
 
 QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
 def calculate():
-    random_number_first = randint(1, 100)
-    random_number_second = randint(1, 100)
-    print(f"Question: {random_number_first} {random_number_second}")
-    while random_number_first != 0 and random_number_second != 0:
-        if random_number_first > random_number_second:
-            random_number_first %= random_number_second
+    number_1 = random.randint(0, 50)
+    number_2 = random.randint(0, 50)
+    task = f'{number_1} {number_2}'
+    while number_1 != 0 and number_2 != 0:
+        if number_1 > number_2:
+            number_1 %= number_2
         else:
-            random_number_second %= random_number_first
-    return str(random_number_first + random_number_second)
+            number_2 %= number_1
+    correct_answer = str(number_1 + number_2)
+    return task, correct_answer

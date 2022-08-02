@@ -1,3 +1,4 @@
+"""The even game logic."""
 from random import randint
 
 
